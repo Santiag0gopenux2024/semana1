@@ -1,10 +1,11 @@
-<h1>Yo soy el componente Hijo</h1>
-
-<div class="conteiner">
-  <mat-form-field appearance="legacy">
+<div class="container">
+  <h1>Yo soy el componente Hijo</h1>
+  <mat-form-field class="form" appearance="legacy">
     <mat-label>Tu nombre:</mat-label>
     <input matInput placeholder="Ingresa tu nombre" #newItem>
     <mat-hint>Nombre completo</mat-hint>
   </mat-form-field>
-  <p> <button (click)="onAddNewItem(newItem.value)"mat-raised-button color="warn">Enviar</button></p>
+  <button (click)="onAddNewItem(newItem.value)" mat-raised-button color="warn">Enviar</button>
 </div>
+
+

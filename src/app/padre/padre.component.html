@@ -1,7 +1,8 @@
-<app-hijo (newItemEvent)="onNewItemReceived($event)"></app-hijo>
+<div class="container">
+  <app-hijo (newItemEvent)="onNewItemReceived($event)"></app-hijo>
+  <h1>Yo soy el componente Padre</h1>
+  <p>La respuesta enviada por el Hijo es: {{ receivedName }}</p>
+</div>
 
-<h1>Yo soy el componente Padre</h1>
-
-<p>La respuesta enviada por el Hijo es: {{ receivedName }}</p>
 
 

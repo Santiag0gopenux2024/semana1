@@ -3,10 +3,12 @@ h1{
   font-family: "Abyssinica SIL";
   font-size: 30px;
 }
-p {
-  text-align: center;
+.container {
+  display: flex;
+  align-items: center;
   font-family: "Abyssinica SIL";
   font-size: 15px;
+  flex-direction: column;
 }
 
 
