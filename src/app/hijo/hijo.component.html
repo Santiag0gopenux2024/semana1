@@ -2,7 +2,7 @@
   <h1>Yo soy el componente Hijo</h1>
   <mat-form-field class="form" appearance="legacy">
     <mat-label>Tu nombre:</mat-label>
-    <input matInput placeholder="Ingresa tu nombre" #newItem>
+    <input matInput placeholder="Ingresa tu nombre:" #newItem pattern="^[a-zA-Z\s]+$" required>
     <mat-hint>Nombre completo</mat-hint>
   </mat-form-field>
   <button (click)="onAddNewItem(newItem.value)" mat-raised-button color="warn">Enviar</button>
