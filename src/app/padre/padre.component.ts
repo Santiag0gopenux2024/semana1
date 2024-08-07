@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-padre',
   templateUrl: './padre.component.html',
   styleUrls: ['./padre.component.css']
 })
-export class PadreComponent implements OnInit {
+export class PadreComponent {
+  receivedName: string = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onNewItemReceived(name: string): void {
+    this.receivedName = name;
   }
-
 }
