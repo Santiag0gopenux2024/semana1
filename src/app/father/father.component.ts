@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-padre',
-  templateUrl: './padre.component.html',
-  styleUrls: ['./padre.component.css']
+  selector: 'app-father',
+  templateUrl: './father.component.html',
+  styleUrls: ['./father.component.css']
 })
-export class PadreComponent {
+export class FatherComponent {
   receivedName: string = '';
 
   onNewItemReceived(name: string): void {

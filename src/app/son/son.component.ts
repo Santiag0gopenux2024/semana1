@@ -1,11 +1,11 @@
 import {Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-hijo',
-  templateUrl: './hijo.component.html',
-  styleUrls: ['./hijo.component.css']
+  selector: 'app-son',
+  templateUrl: './son.component.html',
+  styleUrls: ['./son.component.css']
 })
-export class HijoComponent {
+export class SonComponent {
 
   @Output() newItemEvent = new EventEmitter<string>();
 
@@ -17,4 +17,5 @@ export class HijoComponent {
       console.error('El valor ingresado contiene caracteres no permitidos.');
     }
   }
+
 }
