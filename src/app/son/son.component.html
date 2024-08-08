@@ -5,5 +5,8 @@
     <input matInput placeholder="Ingresa tu nombre:" #newItem pattern="^[a-zA-Z\s]+$" required>
     <mat-hint>Nombre completo</mat-hint>
   </mat-form-field>
-  <button (click)="onAddNewItem(newItem.value)" mat-raised-button color="warn">Enviar</button>
+  <button (click)="onAddNewItem(newItem.value)" mat-raised-button color="warn">
+    Enviar
+    <mat-icon>send</mat-icon>
+  </button>
 </div>

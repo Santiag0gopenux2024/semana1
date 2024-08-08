@@ -6,14 +6,19 @@ import { FatherComponent } from './father/father.component';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDividerModule} from '@angular/material/divider';
+import { FormComponent } from './form/form.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
     AppComponent,
     SonComponent,
-    FatherComponent
+    FatherComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +26,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatInputModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatDividerModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatIconModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

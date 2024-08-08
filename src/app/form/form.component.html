@@ -1,0 +1,47 @@
+
+<div class="container">
+<h1>Yo soy un nuevo componente</h1>
+<form [formGroup]="form" *ngIf="form" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="name" type="text">
+    <mat-error *ngIf="form.get('name')?.hasError('required')">
+      El nombre es requerido
+    </mat-error>
+
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Edad</mat-label>
+    <input matInput formControlName="edad" type="text">
+  </mat-form-field>
+
+  <button mat-raised-button color="warn" [disabled]="form.invalid">
+    <mat-icon>save</mat-icon>
+  </button>
+</form>
+
+</div>
+
+<div class="centered-container">
+  <mat-button-toggle-group #collectionBoton="matButtonToggleGroup" name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="C++">
+      C++
+    </mat-button-toggle>
+    <mat-button-toggle value="Java">
+      <mat-icon>casino</mat-icon>
+      Java
+      <mat-icon>pages</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="Python">Python</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+{{collectionBoton.value}}
+<div class="centered-container">
+  <mat-button-toggle-group #collectionBotons="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" multiple>
+    <mat-button-toggle value="HTML">HTML</mat-button-toggle>
+    <mat-button-toggle value="CSS">CSS</mat-button-toggle>
+    <mat-button-toggle value="JavaScript">JavaScript</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+{{collectionBotons.value}}
